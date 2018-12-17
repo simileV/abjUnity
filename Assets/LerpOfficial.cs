@@ -9,7 +9,9 @@ public class LerpOfficial : MonoBehaviour
     private float currentLerpTime;
     public float lerpSpeed = 2.0f;
     private float timeStartedLerping;
-    private bool shouldLerp = false;
+    //private bool shouldLerp = false;
+    private bool shouldLerp = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -38,12 +40,4 @@ public class LerpOfficial : MonoBehaviour
         timeStartedLerping = Time.time;
         shouldLerp = true;
     }
-
-    //public Vector3 Lerp(Vector3 start, Vector3 end, float currentLerpTime)
-    //{
-    //    float percent01 = currentLerpTime / lerpSpeed;
-    //    var result = Vector3.Lerp(start, end, percent01);
-
-    //    return result;
-    //}
 }

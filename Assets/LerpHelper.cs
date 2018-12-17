@@ -4,19 +4,12 @@ using UnityEngine;
 
 public class LerpHelper : MonoBehaviour
 {
-    private bool shouldLerp = false;
 
     public Vector3 startPos;
     public Vector3 endPos;
-    public float timeStartedLerping;
+    private float timeStartedLerping;
+    private bool shouldLerp = false;
     public float lerpTime;
-
-    private void StartLerping()
-    {
-        timeStartedLerping = Time.time;
-        shouldLerp = true;
-
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +37,12 @@ public class LerpHelper : MonoBehaviour
         //    //print("in should Lerp");
         //    transform.position = Lerp(startPos, endPos, timeStartedLerping, lerpTime);
         //}
+    }
+
+    private void StartLerping()
+    {
+        timeStartedLerping = Time.time;
+        shouldLerp = true;
     }
 
     public Vector3 Lerp(Vector3 start, Vector3 end, float timeStartedLerping, float lerpTime)

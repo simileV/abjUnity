@@ -7,17 +7,17 @@ public class moveTrigger : MonoBehaviour
 {
     Vector3 tempPos;
     public float movementSpeed = 100.0f;
-    private System.DateTime startTime;
+    //private System.DateTime startTime;
 
     /* TIMER */
-    private float waitTime = 2.0f;
+    //private float waitTime = 2.0f;
     private float timerD = 0.0f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        startTime = DateTime.Now;
+        //startTime = DateTime.Now;
         //startTime = System.DateTime.Now;
     }
 
