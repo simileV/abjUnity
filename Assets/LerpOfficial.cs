@@ -9,8 +9,8 @@ public class LerpOfficial : MonoBehaviour
     private float currentLerpTime;
     public float lerpSpeed = 2.0f;
     private float timeStartedLerping;
-    //private bool shouldLerp = false;
-    private bool shouldLerp = true;
+    private bool shouldLerp = false;
+    //private bool shouldLerp = true;
 
 
     // Start is called before the first frame update

@@ -13,14 +13,29 @@ public class TextChanger : MonoBehaviour
     //private bool shouldLerp = true;
 
     public AudioClip myAudioClip;
-    //AudioSource audioSource;
+    public AudioSource audioSource;
+
+    private string[] taskList = new string[6];
+
+    void TaskRoster()
+    {
+        taskList[0] = "play Injustice";
+        taskList[1] = "play Injustice 2";
+        taskList[2] = "play Killer instinct";
+        taskList[3] = "play KoF 13";
+        taskList[4] = "play KoF 14";
+        taskList[5] = "play League";
+    }
 
     Color textColor = Color.white;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource.GetComponent<AudioSource>();
         //endVec = transform.position;
+
+        TaskRoster();
     }
 
     // Update is called once per frame
@@ -29,6 +44,11 @@ public class TextChanger : MonoBehaviour
         if (Input.GetKeyUp("space"))
         {
             StartLerping();
+            audioSource.PlayOneShot(myAudioClip, 1.0f);
+
+            int taskID = Random.Range(0, taskList.Length - 1);
+            //print("taskID = " + taskID);
+            //print("taskList size 0 = " + taskList.Length);
         }
 
         if (shouldLerp)
