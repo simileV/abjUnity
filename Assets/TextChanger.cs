@@ -49,6 +49,9 @@ public class TextChanger : MonoBehaviour
             int taskID = Random.Range(0, taskList.Length - 1);
             //print("taskID = " + taskID);
             //print("taskList size 0 = " + taskList.Length);
+
+            print("random task = " + taskList[taskID]);
+            GetComponent<TextMesh>().text = taskList[taskID];
         }
 
         if (shouldLerp)
