@@ -16,6 +16,9 @@ public class LerpOfficial : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //startVec = GetComponent<Transform>().position;
+        //startVec = transform.position;
+
         //endVec = transform.position;
     }
 

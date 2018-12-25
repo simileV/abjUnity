@@ -61,13 +61,13 @@ public class TMP_textChanger : MonoBehaviour
         taskList[33] = "model a stargate";
 
         taskList[34] = "read TWD";
-        taskList[35] = "read SF";
+        taskList[35] = "read Street F";
 
-        taskList[36] = "order independant transparency";
+        taskList[36] = "bloom";
         taskList[37] = "motion blur";
         taskList[38] = "lens flare";
 
-        taskList[39] = "practice FL studio";
+        taskList[39] = "FL studio";
         taskList[40] = "organize Spotify playlists";
     }
 
